@@ -1,0 +1,58 @@
+.footer-background {
+    background: rgb(246, 246, 246);    
+}
+.footer-container {
+    margin: 1.5rem 1.125rem;
+    padding: 2.25rem 0.75rem 0.25rem 0.75rem;
+
+}
+
+
+.footer-container .footer-top {
+    margin-bottom:7.5rem;
+}
+
+.footer-container img.logo-footer-icon {
+    width: 1.25rem;
+}
+
+.footer-container .contact-box p,
+.footer-container .contact-box a {
+    font-size: 1.125rem;
+}
+
+.footer-container .contact-box span {
+    margin-bottom: 0.25rem;
+}
+
+.footer-container .footer-links li {
+    font-size: 1.25rem
+}
+
+.footer-container .footer-middle span {
+    font-size: 1.125rem;
+}
+
+.footer-container .footer-bottom {
+    margin-top: 1.25rem;
+}
+
+.footer-container .footer-bottom img {
+    
+    width: 100%;
+    height: 13.425rem;
+}
+
+@media (max-width: 768px) {
+    .footer-container .footer-top {
+        margin-bottom:4.5rem;
+    }
+
+    .footer-container .footer-bottom img {
+        height: 5rem;
+    }
+
+    .footer-container .footer-bottom {
+        margin-top: 4.25rem;
+    }
+}

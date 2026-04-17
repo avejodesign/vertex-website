@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Haas Grot';
+  src: url('/fonts/NeueHaasDisplayMediu.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Haas Grot';
+  src: url('/fonts/NeueHaasDisplayBold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --base-font-scale: 1vw;
+}
+
+* {
+  margin: 0rem;
+  padding: 0rem;
+  box-sizing: border-box;
+  font-family: 'Haas Grot', sans-serif;
+  font-weight: 125%;
+}
+
+body {
+  background: #fff;;
+}
+
+html {
+  font-size: var(--base-font-scale);
+}
+
+
+@media (max-width: 768px) {
+    :root {
+        --base-font-scale: 2.5vw; 
+    }
+}
+
+.split-line, .split-char, .shuffle-text div {
+  overflow: hidden !important;
+}
+
+.pin-spacer {
+  z-index: 10 !important;
+}
+
+.menu-container .get-menu,
+.navbar-container .get-contact {
+  border-radius: 0.25rem;
+  transition: all 0.2s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.menu-container .get-menu:hover,
+.navbar-container .get-contact:hover {
+  
+  transform: scale(0.95);
+  transition: all 0.2s cubic-bezier(0.77, 0, 0.175, 1);
+}

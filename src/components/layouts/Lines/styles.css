@@ -1,0 +1,27 @@
+.lines-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 1000;
+    background-blend-mode: difference;
+}
+
+.lines-container .line {
+    position: absolute;
+    left: 1.125rem;
+    width: 1px;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.line.line-2 {
+    left: 50%;
+}
+
+.line.line-3 {
+    left: initial;
+    right: 1.125rem;
+}

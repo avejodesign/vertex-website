@@ -1,0 +1,165 @@
+.projects-wrapper {
+    padding-top: 3rem;
+}
+
+.projects-container {
+    margin: 1.5rem 1.125rem;
+    padding: 0 0.75rem;
+}
+
+.projects-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 3rem;
+}
+
+.projects-list .project-box {
+    position: relative;
+}
+
+
+.projects-list .project-box  {
+    width: 37.5rem;
+    height: 22rem;
+}
+
+.projects-list .project-box .image-mask {
+    position: relative;
+    width: 100%;
+    height: 100%; 
+    overflow: hidden;
+}
+
+.projects-list .project-box .image-mask img {
+    /* position: relative; */
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    /* opacity: brightness(0.8); */
+}
+
+.projects-list .project-box .image-mask::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: var(--mask-background, transparent);
+    /* background-color: rgba(0, 0, 0, 0.0); */
+}
+
+.projects-list .project-box .span-box {
+    position: absolute;
+    top: 50%;
+    transform: translate(0%, -50%);
+    writing-mode: sideways-lr;
+    height: 22rem;
+    display: flex;
+    justify-content: space-between;
+    font-size: 3.75rem;
+    /* color: white; */
+    /* padding: 2.125rem 1.125rem; */
+    margin-left: -5rem;
+    
+}
+
+
+.projects-list .project-box .span-box span {
+    mix-blend-mode: difference;
+}
+/* .projects-list .project-box .span-box:first-child {
+} */
+.projects-list .project-box .span-box:last-child {
+    right: 0;
+    margin-right: -5rem;
+}
+
+.slider-title {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 100%;
+  color: #fff;
+}
+
+.slider-title h3 {
+    font-size: 5.125rem;
+    line-height: 100%;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.slider-title a .line {
+    display: flex !important;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.slider-title a .line svg {
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+.slider-images {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.slider-images img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-origin: center;
+  will-change: transform, opacity;
+}
+
+.slider-images::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.35);
+}
+
+.slider-images img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-origin: center;
+  will-change: transform, opacity;
+}
+
+@media (max-width: 768px) { 
+
+    .projects-list {
+        gap: 0;
+
+    }
+    .projects-list .project-box  { 
+        width: 30.5rem;
+        height: 18.5rem;
+    }
+
+    .projects-list .project-box .span-box {
+        font-size: 1.75rem;
+        margin-left: -3rem;
+        height: 18.5rem;
+    }
+
+    .projects-list .project-box .span-box:last-child {
+        margin-right: -3rem;
+    }
+
+    .slider-title h3 {
+        font-size: 3.125rem;
+        margin-top: 0.625rem;
+    }
+
+}

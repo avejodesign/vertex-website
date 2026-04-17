@@ -1,0 +1,48 @@
+.about-container {
+    margin: 1.5rem 1.125rem;
+    padding: 0 0.75rem;
+}
+
+.about-container h2 {
+    font-size: 8rem;
+    line-height: 8rem;
+    font-weight: 700;
+}
+
+.about-container img {
+    width: 100%;
+}
+
+.about-container p {
+    font-size: 1rem;
+    margin-top: 4.125rem;
+    margin-bottom: 1.125rem;
+}
+
+.about-container .based-brazil {
+    margin-top: 6.25rem;
+    margin-bottom: 6.25rem;
+}
+
+@media (max-width: 768px) {
+    .about-container h2 {
+        font-size: 5rem;
+        line-height: 5rem;
+    }
+
+    .about-container p {
+        margin-top: 1.125rem;
+        margin-bottom: 2.125rem;
+    }
+
+    .about-container img {
+        height: 40rem;
+        object-fit: cover;
+        margin-bottom: 1.125rem;
+    }
+
+    .about-container .based-brazil {
+        margin-top: 2.25rem;
+        margin-bottom: 4.25rem;
+    }
+}
